@@ -145,6 +145,10 @@ app.post('/uploadImage', async (req, res) => {
     });
   });
 
+  app.get('/', (req, res) => {
+    res.send("This is the EAII Auth Server");
+  });
+
 
 app.listen(port, () => {
   console.log(`Auth server running on port ${port}.`);
